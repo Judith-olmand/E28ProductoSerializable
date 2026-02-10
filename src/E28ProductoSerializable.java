@@ -8,6 +8,7 @@ public class E28ProductoSerializable {
         List <Producto> productos = new ArrayList<>();
 
         productos.add(new Producto("Televisión", 399.55, 3));
+        //USO DE GEMINI
         productos.add(new Producto("Televisión", 399.55, 3));
         productos.add(new Producto("Laptop Pro", 1250.99, 5));
         productos.add(new Producto("Smartphone S24", 899.00, 10));
@@ -52,6 +53,7 @@ public class E28ProductoSerializable {
         String fichero = sc.nextLine();
 
         CrearFichero.crearFichero(productos,fichero);
+
         List<Producto> productos2 = new ArrayList<>();
         productos2 = LeerFichero.leerFichero(fichero);
 
